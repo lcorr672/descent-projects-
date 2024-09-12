@@ -1,0 +1,87 @@
+import random # 
+high = 0
+play = True
+while play:
+    
+    
+    
+    lives = 10
+    attempts = 0
+    random_number = random.randint(1,20) #Gets a random number in the range
+
+    while lives > 0:
+        player_input = (input('number 1-20')) #Human input 
+
+        if player_input.lower() == 'exit':
+                break
+        
+        try:
+            player_input = int(player_input) #gets a value error  
+        except ValueError:
+            print('1-20')
+            continue
+
+
+        if player_input > 20 or player_input < 1: #Can't go over 20 
+            print('error, Number 1-20 please')
+            continue #loops until right 'continue'  
+        else:
+            print('')
+
+            #----------------------------------All data handling of special
+            #                                    characters and negatives above this line 
+        
+        diff = abs(player_input - random_number) #diffrence from the guess number 
+
+        attempts +=1
+        
+        
+
+        if player_input > 20:
+            print('1-20 please') #greater than 20 repeat ask for 1-20 
+            continue
+        elif player_input == random_number:
+            print(f'yippe you got the answer, {random_number}')
+            if player_input == random_number:
+                high += 1
+                print(f'Current high score {high}')
+            else:
+                print('')
+
+            break
+        else:
+            print('')
+
+
+        if player_input < random_number:
+            if (random_number - player_input) < 10: #hot cold thing 
+                print("")
+            else:
+                print("")
+            print("Your guess is low.")
+        elif player_input > random_number:
+            if (player_input - random_number) < 10:
+                print("")
+            else:
+                print("")
+            print("Your guess is high.")
+        else:
+            break
+
+        
+        lives -= 1 
+
+
+
+    if lives == 0: #resest high score if lives = 0 
+        high = 0 
+        print(f'game over, number {random_number}')
+    else:
+        print(f'NUMBER OF ATTEMPS, {attempts}')
+    
+        
+    again = str(input('Do you want to play again yes or no')).strip().lower() #asks user if they want to play again 
+    if again == 'no':
+        play = False
+        print('thanks for playing')
+        
