@@ -1,0 +1,18 @@
+body {background-color: lightgreen;
+font-size: 50px;}
+
+
+.esta{font-style: italic;
+font-size: 30px;}
+
+h1,p,img{text-align: center;}
+
+.menu{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;}
+
+.idek{ margin-left: auto;
+    margin-right: auto;
+font-style: italic;
+font-size: 25px;}
