@@ -1,0 +1,49 @@
+body{ background-image: url(https://www.freedomrangerhatchery.com/wp-content/uploads/2019/03/flock.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+font-family: sans-serif; 
+padding: 20px;
+background-attachment: fixed;}
+
+.howold{font-style: italic} 
+
+.idk{font-size: 30px;
+font-style: italic ;}
+
+img {width:100px;}
+
+h1 {font-size:60px;
+color:brown;
+margin-bottom: 15px;
+margin-top:0px;}
+
+h1,h2,p{text-align:center;
+    }
+
+.menu{width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px; }
+
+.item p{display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+    line-height: 2;}
+      
+.price {
+    text-align: right;
+    width: 25%;
+    }
+img {
+        display: block;
+        margin-top: -25px;
+        margin-right: auto;
+      }
